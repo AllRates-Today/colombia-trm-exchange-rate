@@ -1,0 +1,55 @@
+{
+  "name": "colombia-trm-exchange-rate",
+  "version": "1.2.2",
+  "description": "Official Superintendencia Financiera de Colombia (Colombia) daily exchange rates — 1 currency vs COP, history since 1991. Zero-dependency Node.js/TypeScript client.",
+  "keywords": [
+    "sfc",
+    "superintendencia",
+    "financiera",
+    "de",
+    "colombia",
+    "exchange-rate",
+    "exchange-rates",
+    "currency",
+    "forex",
+    "fx",
+    "cop",
+    "central-bank",
+    "official-rates",
+    "colombia",
+    "api",
+    "typescript"
+  ],
+  "homepage": "https://allratestoday.com/central-bank-rates-api/sfc/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllRates-Today/colombia-trm-exchange-rate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AllRates-Today/colombia-trm-exchange-rate/issues"
+  },
+  "license": "MIT",
+  "author": "AllRatesToday <hello@allratestoday.com> (https://allratestoday.com)",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}

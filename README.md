@@ -170,9 +170,9 @@ Pass `{ symbol: 'USD' }` instead of `source`/`target` to get the raw published r
 
 ## 🗺️ Currencies covered
 
-Superintendencia Financiera de Colombia currently publishes rates covering **1 currency** (as of the latest table):
+Superintendencia Financiera de Colombia currently publishes rates covering **1 currency** against the COP (as of the latest table):
 
-`USD`
+🇺🇸 `USD`
 
 ## ⚖️ Published vs derived rates
 

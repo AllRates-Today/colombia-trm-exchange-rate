@@ -70,10 +70,10 @@ const pair = await getRate('USD', 'COP', { apiKey: 'art_live_...' });
 {
   bank: 'sfc',
   name: 'Superintendencia Financiera de Colombia',
-  rate_date: '2026-08-12',   // Superintendencia Financiera de Colombia's own publication date
+  rate_date: '2026-09-09',   // Superintendencia Financiera de Colombia's own publication date
   source: 'USD',
   target: 'COP',
-  rate: 3121.07,
+  rate: 3116.47,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -98,9 +98,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'sfc',
   name: 'Superintendencia Financiera de Colombia',
-  rate_date: '2026-08-12',
+  rate_date: '2026-09-09',
   rates: [
-    { "base": "USD", "quote": "COP", "type": "reference", "value": 3121.07 },
+    { "base": "USD", "quote": "COP", "type": "reference", "value": 3116.47 },
     // … the rest of the published table (1 currency vs COP)
   ],
   disclaimer: '…'
@@ -140,7 +140,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'colombia-trm-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'COP', from: '2026-01-01', to: '2026-08-12' },
+  { source: 'USD', target: 'COP', from: '2026-01-01', to: '2026-09-09' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -153,11 +153,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'COP',
   from: '2026-01-01',
-  to: '2026-08-12',
+  to: '2026-09-09',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-08-12', rate: 3121.07, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-09', rate: 3116.47, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -235,6 +235,14 @@ getRate('USD', 'COP', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 1991 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/sfc.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/sfc/latest.json`
 
 ## 🔗 Links
 

@@ -1,6 +1,6 @@
 {
   "name": "colombia-trm-exchange-rate",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Official Superintendencia Financiera de Colombia (Colombia) daily exchange rates — 1 currency vs COP, history since 1991. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "sfc",

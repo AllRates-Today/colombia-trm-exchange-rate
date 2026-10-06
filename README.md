@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'COP', { apiKey: 'art_live_...' });
 {
   bank: 'sfc',
   name: 'Superintendencia Financiera de Colombia',
-  rate_date: '2026-09-25',   // Superintendencia Financiera de Colombia's own publication date
+  rate_date: '2026-10-03',   // Superintendencia Financiera de Colombia's own publication date
   source: 'USD',
   target: 'COP',
-  rate: 3329.61,
+  rate: 3273.49,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -113,9 +113,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'sfc',
   name: 'Superintendencia Financiera de Colombia',
-  rate_date: '2026-09-25',
+  rate_date: '2026-10-03',
   rates: [
-    { "base": "USD", "quote": "COP", "type": "reference", "value": 3329.61 },
+    { "base": "USD", "quote": "COP", "type": "reference", "value": 3273.49 },
     // … the rest of the published table (1 currency vs COP)
   ],
   disclaimer: '…'
@@ -155,7 +155,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'colombia-trm-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'COP', from: '2026-01-01', to: '2026-09-25' },
+  { source: 'USD', target: 'COP', from: '2026-01-01', to: '2026-10-03' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -168,11 +168,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'COP',
   from: '2026-01-01',
-  to: '2026-09-25',
+  to: '2026-10-03',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-25', rate: 3329.61, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-10-03', rate: 3273.49, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'

@@ -42,11 +42,11 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-15** by Superintendencia Financiera de Colombia — 1 rate. Updated 2026-10-15.
+Published **2026-10-16** by Superintendencia Financiera de Colombia — 1 rate. Updated 2026-10-16.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| USD | COP | reference | 3197.65 |
+| USD | COP | reference | 3170.46 |
 
 Source: [Official rates published by SFC, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/sfc/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->

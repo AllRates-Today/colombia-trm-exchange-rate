@@ -47,11 +47,11 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-28 by Superintendencia Financiera de Colombia — 1 rate. Updated 2026-10-28.</summary>
+<summary>Table as text: published 2026-10-29 by Superintendencia Financiera de Colombia — 1 rate. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| USD | COP | reference | 3148.02 |
+| USD | COP | reference | 3162.35 |
 
 </details>
 
@@ -216,6 +216,7 @@ The Superintendencia Financiera de Colombia certifies the TRM (Tasa Representati
 
 - Publisher's own page: [TRM — Tasa Representativa del Mercado](https://www.superfinanciera.gov.co/publicaciones/60819/trm/) · [www.superfinanciera.gov.co](https://www.superfinanciera.gov.co)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [Superintendencia Financiera de Colombia rates page](https://allratestoday.com/central-bank-rates-api/sfc/)
+- In the API: usually by **00:15 UTC** (measured over the last 11 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers

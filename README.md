@@ -32,11 +32,11 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-14 by Superintendencia Financiera de Colombia — 1 rate. Updated 2026-11-16.</summary>
+<summary>Table as text: published 2026-11-18 by Superintendencia Financiera de Colombia — 1 rate. Updated 2026-11-18.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| USD | COP | reference | 3316.7 |
+| USD | COP | reference | 3309.55 |
 
 </details>
 
